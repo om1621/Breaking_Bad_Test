@@ -1,0 +1,64 @@
+.img-box
+{
+    width: 100%;
+    background: transparent;
+    border-radius: 6px;
+    position: relative;
+}
+
+.char-grid
+{
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.loader
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 500px;
+}
+
+.loader img
+{
+    width: 250px;
+    height: 250px;
+}
+
+.front img
+{
+    width: 100%;
+    opacity: 1;
+    max-width: 300px;
+    height: 300px;
+    transition: all 0.6s ease;
+
+}
+
+.back button
+{
+    opacity: 0;
+    background: transparent;
+    border: 2px solid #00ff8c!important;
+    color: #00ff8c!important;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease;
+}
+
+.img-box:hover .back button
+{
+    opacity: 1;
+    top: 65%;
+    transition: all 0.6s ease;
+}
+
+.img-box:hover .front img
+{
+    opacity: 0.6;
+    transition: all 0.6s ease;
+}

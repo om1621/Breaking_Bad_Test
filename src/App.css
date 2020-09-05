@@ -1,0 +1,25 @@
+html,
+body {
+  background: #000 url('img/bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.center
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center img
+{
+  width: 250px;
+  height: auto;
+}
+
+.p-4
+{
+  padding: 2.5%;
+}
