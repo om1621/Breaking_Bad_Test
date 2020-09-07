@@ -44,7 +44,7 @@
     border: 2px solid #00ff8c!important;
     color: #00ff8c!important;
     position: absolute;
-    top: 125%;
+    top: 105%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.6s ease;
