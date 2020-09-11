@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header'
 import CharacterGrid from './components/CharacterGrid'
 import Pagination from './components/Pagination'
+import SearchBox from './components/SearchBox'
 
 const App = () => {
 
@@ -34,6 +35,7 @@ const App = () => {
   return (
     <div className="Container">
     <Header />
+    <SearchBox />
     <CharacterGrid loading = {loading} chars = {currChars} />
     <Pagination totalPages={totalPages} pageChange={pageChange} />
     </div>
