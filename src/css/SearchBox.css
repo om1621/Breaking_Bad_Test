@@ -4,3 +4,11 @@
     max-width: 1024px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px)
+{
+    .pagination-lg .page-link
+    {
+        padding: 0.5rem 0.75rem;
+    }
+}

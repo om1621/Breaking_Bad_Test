@@ -1,19 +1,19 @@
 import React, {useState} from 'react'
 import '../css/SearchBox.css'
 
-const SearchBox = () => {
+const SearchBox = ({getInput}) => {
 
     const [inputValue, setinputValue] = useState("");
 
     const handleChange = (e) => {
         e.preventDefault();
         setinputValue(e.target.value);
-        console.log(inputValue);
+        getInput(inputValue);
+        console.log(inputValue);  
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("you searched for " + inputValue);
     }
 
     return (

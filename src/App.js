@@ -12,6 +12,7 @@ const App = () => {
   const [loading, setloading] = useState(true);
   const [page, setpage] = useState(1);
   const [charPerPage] = useState(8);
+  const [searchValue, setsearchValue] = useState("");
 
   const lastChar = page * charPerPage;
   const firstChar = lastChar - charPerPage;
@@ -20,9 +21,14 @@ const App = () => {
 
   const pageChange = (pageNumber) => setpage(pageNumber);
 
+  const getInput = (inputValue) => {
+    console.log(inputValue);
+    setsearchValue(inputValue);
+  }
+
   useEffect(() => {
     const getChar = async () => {
-      let chars = await axios('https://www.breakingbadapi.com/api/characters'); // axios returns a promise
+      let chars = await axios('https://www.breakingbadapi.com/api/characters?name=' + searchValue); // axios returns a promise
       
       console.log(chars.data);
       setcharacters(chars.data);
@@ -30,12 +36,12 @@ const App = () => {
     }
 
     getChar();
-  }, []) // useEffect need a dependacy as parameter
+  }, [searchValue]) // useEffect need a dependacy as parameter
 
   return (
     <div className="Container">
     <Header />
-    <SearchBox />
+    <SearchBox getInput={getInput}/>
     <CharacterGrid loading = {loading} chars = {currChars} />
     <Pagination totalPages={totalPages} pageChange={pageChange} />
     </div>

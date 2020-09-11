@@ -14,7 +14,7 @@ const Pagination = ({totalPages , pageChange}) => {
     return (
 
             <div className="page-grid" style={{ maxWidth: "768px", margin: "2rem auto", display: "flex", justifyContent:"center", alignItems: "center"}}>
-                <ul class="pagination pagination-sm">
+                <ul class="pagination pagination-lg">
                     { pages.map((page) => (
                         <li key={page} className="page-item">
                             <a onClick={() => pageChange(page)} className="page-link" href="!#">{page}</a>
