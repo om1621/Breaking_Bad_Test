@@ -31,6 +31,8 @@ app.get('/api/questions', (req, res) => {
 
 });
 
+// for hosting on heroku
+
 const path = require('path');
   // Serve any static files
   app.use(express.static(path.join(__dirname, 'client/build')));
