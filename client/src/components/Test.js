@@ -76,7 +76,7 @@ function Test({charId}) {
         }
 
         const loadQuestion = async () => {
-            let que = await axios('http://localhost:5000/api/questions');
+            let que = await axios('api/questions');
             setQuestions(que.data);
             
         }
