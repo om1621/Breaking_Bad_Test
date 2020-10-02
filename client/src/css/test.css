@@ -1,0 +1,90 @@
+.test-grid
+{
+    padding: 3% 5%;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+}
+
+.loader
+{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    height: 500px;
+}
+
+.loader img
+{
+    width: 250px;
+    height: 250px;
+}
+
+.choice-form
+{
+    background-color: #00ff8c00;
+    border: 2px solid #00ff8cc9;
+    border-radius: 18px;
+}
+
+.question-div
+{
+    padding: 12px 5%;
+}
+
+.question
+{
+    font-size: 1.8rem;
+    color: #00ff8cc9;
+}
+
+.option
+{
+    font-size: 1.5rem;
+}
+
+.form-check-input {
+    position: relative;
+    margin-left: -0.25rem;
+    margin-right: 10px;
+}
+
+.btns .col-sm-6
+{
+    padding: 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.btns .col-sm-6 button
+{
+    padding: 8px 18px;
+    background: transparent;
+    border: 2px solid #00ff8c!important;
+    color: #00ff8c!important;
+    transition: all 0.5s ease;
+}
+
+.btns .col-sm-6 button:hover
+{
+    background-color:  #00ff8cd7!important;
+    color: white !important;
+    transition: all 0.5s ease;
+}
+
+
+@media screen and (max-width: 440px)
+{
+    .question{
+        font-size: 1.25rem;
+    }
+
+    .option
+    {
+        font-size: 1.2rem;
+    }
+}
+
